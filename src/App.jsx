@@ -72,8 +72,7 @@ export default function App() {
 
     const hash = await hashPassword(password);
     const newUser = { username, email, passwordHash: hash, createdAt: Date.now() };
-    const next = [...users, newUser];
-    setUsers(next);
+    setUsers(prev => [...prev, newUser]);
     setCurrentUser(newUser);
     setRememberMe(true);
     save(STORAGE.SESSION, { username, remember: true });
@@ -93,7 +92,8 @@ export default function App() {
     setCurrentUser(user);
     if (rememberMe) save(STORAGE.SESSION, { username: user.username, remember: true });
     setPage('dashboard');
-    loginUserRef.current.value = ''; loginPassRef.current.value = '';
+    loginUserRef.current.value = ''; 
+    loginPassRef.current.value = '';
   }
 
   function handleLogout() {
@@ -119,8 +119,7 @@ export default function App() {
     if (!title) return alert('Title required');
 
     if (id) {
-      const next = tasks.map(t => t.id === id ? { ...t, title, description, dueDate, priority } : t);
-      setTasks(next);
+      setTasks(prev => prev.map(t => t.id === id ? { ...t, title, description, dueDate, priority } : t));
     } else {
       const newTask = { id: Date.now().toString(36), userId: currentUser.username, title, description, dueDate, priority, completed: false, createdAt: Date.now() };
       setTasks(prev => [...prev, newTask]);
@@ -166,7 +165,25 @@ export default function App() {
 
   // --- Render ---
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 text-gray-800 p-4">
+    <div className="container">
+      {/* Navbar */}
+      <div className="navbar">
+        <div className="nav-left">
+          <span>TaskFlow</span>
+        </div>
+        <div className="nav-right">
+          {currentUser ? (
+            <button onClick={handleLogout}>Logout</button>
+          ) : (
+            <>
+              <button onClick={() => setPage('login')}>Login</button>
+              <button onClick={() => setPage('register')}>Register</button>
+            </>
+          )}
+        </div>
+      </div>
+
+      {/* Pages */}
       {page === 'landing' && <Landing setPage={setPage} />}
       {page === 'login' && <Login handleLogin={handleLogin} loginUserRef={loginUserRef} loginPassRef={loginPassRef} rememberMe={rememberMe} setRememberMe={setRememberMe} setPage={setPage} />}
       {page === 'register' && <Register handleRegister={handleRegister} setPage={setPage} />}
@@ -180,6 +197,11 @@ export default function App() {
           sortBy={sortBy} setSortBy={setSortBy} handleLogout={handleLogout} now={now}
         />
       )}
+
+      {/* Footer */}
+      <div className="footer">
+        &copy; 2025 TaskFlow. Munyaradzi Chiondegwa
+      </div>
     </div>
   );
 }

@@ -1,17 +1,83 @@
-# React + Vite
+Got it! Here’s a **full rewritten `README.md`** for your TaskFlow app, incorporating the GitHub Pages link and presenting the project clearly:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+````markdown
+# TaskFlow App
 
-Currently, two official plugins are available:
+**TaskFlow** is a modern, responsive task management web application built with **React** and **Vite**. It allows users to register, log in, create, edit, and manage tasks with priority levels, due dates, and completion status. The app also supports task import/export and provides a clean, dark-glass aesthetic interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
 
-## React Compiler
+Try the app live here: [TaskFlow App on GitHub Pages](https://munyaradzichiondegwa.github.io/taskflow-app/)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- **User Authentication**
+  - Register and log in with persistent sessions
+  - Remember Me functionality
+- **Task Management**
+  - Add, edit, delete, and mark tasks as complete
+  - Filter tasks by status (all, pending, completed)
+  - Sort tasks by date, title, or priority
+- **Task Import/Export**
+  - Export your tasks as JSON
+  - Import tasks from a JSON file
+- **Dashboard**
+  - Overview of total, completed, and pending tasks
+  - Responsive and interactive interface
+- **Dark Glass UI**
+  - Smooth glass-like design with modern gradients and animations
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# taskflow-app
+
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/munyaradzichiondegwa/taskflow-app.git
+````
+
+2. Install dependencies:
+
+```bash
+cd taskflow-app
+npm install
+```
+
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+The app will run on `http://localhost:5173` by default.
+
+## Build for Production
+
+To build the app for deployment:
+
+```bash
+npm run build
+```
+
+The build output will be in the `dist` folder. You can deploy this folder to GitHub Pages or any static hosting service.
+
+## Technologies Used
+
+* [React](https://reactjs.org/)
+* [Vite](https://vitejs.dev/)
+* Vanilla CSS with modern glass/dark UI design
+* LocalStorage for persistent data
+* JavaScript ES6+
+
+## Contributing
+
+Contributions are welcome! Feel free to submit issues or pull requests.
+
+## License
+
+This project is open source and available under the MIT License.
+
+---
+
+
