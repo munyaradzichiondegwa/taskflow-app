@@ -1,6 +1,3 @@
-Got it! Here’s a **full rewritten `README.md`** for your TaskFlow app, incorporating the GitHub Pages link and presenting the project clearly:
-
-````markdown
 # TaskFlow App
 
 **TaskFlow** is a modern, responsive task management web application built with **React** and **Vite**. It allows users to register, log in, create, edit, and manage tasks with priority levels, due dates, and completion status. The app also supports task import/export and provides a clean, dark-glass aesthetic interface.
