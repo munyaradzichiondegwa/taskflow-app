@@ -1,14 +1,23 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { FaFacebook, FaTwitter, FaLinkedin, FaGlobe } from 'react-icons/fa';
 
 export default function Footer() {
+  const [now, setNow] = useState(new Date());
+  useEffect(() => {
+    const timer = setInterval(() => setNow(new Date()), 1000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
-    <footer className="mt-6 text-center text-gray-500">
-      <div className="flex justify-center gap-4 mb-2">
-        <a href="https://facebook.com" target="_blank" className="hover:text-blue-600">Facebook</a>
-        <a href="https://twitter.com" target="_blank" className="hover:text-blue-400">Twitter</a>
-        <a href="https://instagram.com" target="_blank" className="hover:text-pink-500">Instagram</a>
-      </div>
-      <div>© {new Date().getFullYear()} TaskFlow</div>
-    </footer>
-  );
+    <footer id="appFooter">
+  <div className="footer-links">
+    <a href="https://www.facebook.com/nevanjimunya.chiondegwa" target="_blank">🔵</a>
+    <a href="https://x.com/NNehoreka/" target="_blank">🐦</a>
+    <a href="https://www.linkedin.com/in/munyaradzi-chiondegwa/" target="_blank">💼</a>
+    <a href="https://munyaradzichiondegwa.netlify.app/" target="_blank">🌐</a>
+  </div>
+  <div>© {new Date().getFullYear()} TaskFlow — {new Date().toLocaleTimeString()}</div>
+</footer>
+
+ );
 }
