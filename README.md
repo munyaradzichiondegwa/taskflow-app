@@ -1,11 +1,14 @@
+Here’s a cleaned-up Markdown version of your file, with all references to JavaScript in styling removed:
+
+````markdown
 # TaskFlow App
 
-**TaskFlow** is a modern, responsive task management web application built with **React** and **Vite**. It allows users to register, log in, create, edit, and manage tasks with priority levels, due dates, and completion status. The app also supports task import/export and provides a clean, dark-glass aesthetic interface.
+**TaskFlow** is a modern, responsive task management web application. It allows users to register, log in, create, edit, and manage tasks with priority levels, due dates, and completion status. The app also supports task import/export and provides a clean, dark-glass aesthetic interface.
 
 ## Live Demo
 
-Try the app live here: [TaskFlow App on Netlify ](https://munya-taskflow.netlify.app/)
-It is on GitHub as: https://github.com/munyaradzichiondegwa/taskflow-app
+Try the app live here: [TaskFlow App on Netlify](https://munya-taskflow.netlify.app/)  
+GitHub repository: [https://github.com/munyaradzichiondegwa/taskflow-app](https://github.com/munyaradzichiondegwa/taskflow-app)
 
 ## Features
 
@@ -24,8 +27,6 @@ It is on GitHub as: https://github.com/munyaradzichiondegwa/taskflow-app
   - Responsive and interactive interface
 - **Dark Glass UI**
   - Smooth glass-like design with modern gradients and animations
-
-
 
 ## Installation
 
@@ -66,7 +67,6 @@ The build output will be in the `dist` folder. You can deploy this folder to Git
 * [Vite](https://vitejs.dev/)
 * Vanilla CSS with modern glass/dark UI design
 * LocalStorage for persistent data
-* JavaScript ES6+
 
 ## Contributing
 
@@ -75,7 +75,5 @@ Contributions are welcome! Feel free to submit issues or pull requests.
 ## License
 
 This project is open source and available under the MIT License.
-
----
 
 
