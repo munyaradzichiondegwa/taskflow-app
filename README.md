@@ -1,8 +1,3 @@
-Here is the improved **README.md rewritten fully in clean Markdown** — no extra formatting, no mixed styling, and perfectly ready to paste directly into GitHub.
-
----
-
-````markdown
 # TaskFlow App
 
 TaskFlow is a modern, visually polished task management web application built with **React**, **Vite**, and modular **JavaScript**. It provides a smooth way to create, organize, sort, and track tasks while offering a unique **dark glass (glassmorphism)** user interface.
