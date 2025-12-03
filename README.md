@@ -9,21 +9,23 @@ All data is stored client-side using LocalStorage, making the app fast, lightwei
 ## Live Demo
 
 **Netlify Deployment:**  
-https://munya-taskflow.netlify.app/
+<https://munya-taskflow.netlify.app/>
 
 **GitHub Repository:**  
-https://github.com/munyaradzichiondegwa/taskflow-app
+<https://github.com/munyaradzichiondegwa/taskflow-app>
 
 ---
 
 ## Features
 
 ### User Authentication
+
 - Register and log in with email and password
 - Optional **Remember Me** for long-term sessions
 - Client-side authentication stored in LocalStorage
 
 ### Task Management
+
 - Create, edit, delete, and complete tasks
 - Priority selection (Low, Medium, High)
 - Due date assignment
@@ -31,10 +33,12 @@ https://github.com/munyaradzichiondegwa/taskflow-app
 - Smooth UI animations
 
 ### Dashboard Overview
+
 - Summary of **Total**, **Completed**, and **Pending** tasks
 - Responsive layout across all devices
 
 ### Filtering & Sorting
+
 - Filter by task status (All, Pending, Completed)
 - Sort tasks by:
   - Due date
@@ -42,13 +46,16 @@ https://github.com/munyaradzichiondegwa/taskflow-app
   - Priority
 
 ### Task Import & Export
+
 - Export all tasks as a JSON file
 - Import tasks from a JSON file
 - Error-checked JSON validation
 
 ### Dark Glass UI
+
 Based on glassmorphism principles:
-- Frosted panels  
+
+- Frosted panels
 - Semi-transparent backgrounds  
 - Soft shadows and glow effects  
 - Clean, minimalist typography  
@@ -59,9 +66,10 @@ Based on glassmorphism principles:
 ## Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/munyaradzichiondegwa/taskflow-app.git
-````
+   ```
 
 2. Install dependencies:
 
@@ -91,10 +99,10 @@ npm run build
 
 This will create the `dist/` directory locally, which can be deployed to:
 
-* Netlify
-* Vercel
-* GitHub Pages
-* Any static hosting service
+- Netlify
+- Vercel
+- GitHub Pages
+- Any static hosting service
 
 ---
 
@@ -119,11 +127,11 @@ taskflow-app/
 
 ## Technologies Used
 
-* **React**
-* **Vite**
-* **JavaScript**
-* **CSS (custom, no frameworks)**
-* **LocalStorage API**
+- **React**
+- **Vite**
+- **JavaScript**
+- **CSS (custom, no frameworks)**
+- **LocalStorage API**
 
 ---
 
@@ -131,8 +139,8 @@ taskflow-app/
 
 ### Authentication
 
-* Email and password stored in LocalStorage
-* Login state handled through React state + `useEffect`
+- Email and password stored in LocalStorage
+- Login state handled through React state + `useEffect`
 
 ### Tasks
 
@@ -151,9 +159,9 @@ Each task is stored as an object:
 
 ### Import & Export
 
-* JSON export via Blob (download link)
-* JSON import via FileReader
-* Validation protects against malformed data
+- JSON export via Blob (download link)
+- JSON import via FileReader
+- Validation protects against malformed data
 
 ---
 
@@ -167,4 +175,3 @@ Feel free to open issues or submit pull requests.
 ## License
 
 This project is released under the **MIT License**.
-
