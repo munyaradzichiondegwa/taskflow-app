@@ -1,8 +1,10 @@
 import React from 'react';
 
 export default function Landing({ setPage }) {
+  const containerClass = "flex flex-col items-center justify-center flex-1 min-h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-pink-900 text-white p-6";
+  
   return (
-    <div className="flex flex-col items-center justify-center flex-1 min-h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-pink-900 text-white p-6">
+    <div className={containerClass}>
       <h1 className="text-4xl font-bold mb-6">Welcome to TaskFlow</h1>
       <p className="mb-8 text-center max-w-md">Manage your tasks easily and stay productive. Register or login to continue.</p>
       <div className="flex gap-4">
