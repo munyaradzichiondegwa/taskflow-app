@@ -1,6 +1,3 @@
-Here’s a cleaned-up Markdown version of your file, with all references to JavaScript in styling removed:
-
-````markdown
 # TaskFlow App
 
 **TaskFlow** is a modern, responsive task management web application. It allows users to register, log in, create, edit, and manage tasks with priority levels, due dates, and completion status. The app also supports task import/export and provides a clean, dark-glass aesthetic interface.
