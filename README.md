@@ -4,7 +4,8 @@
 
 ## Live Demo
 
-Try the app live here: [TaskFlow App on GitHub Pages](https://munyaradzichiondegwa.github.io/taskflow-app/)
+Try the app live here: [TaskFlow App on Netlify ](https://munya-taskflow.netlify.app/)
+It is on GitHub as: https://github.com/munyaradzichiondegwa/taskflow-app
 
 ## Features
 
